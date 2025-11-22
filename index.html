@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PetCareApp – Marketplace e Guia de Lojas Pet</title>
+  <meta name="description" content="PetCareApp: marketplace e guia de lojas pet em Django, com mapa, filtragem por localização, avaliações, favoritos, curtidas e painel do lojista." />
+  <meta name="theme-color" content="#4f46e5" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="fotos%20projeto/petcare%20logo.jpg" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "PetCareApp",
+    "applicationCategory": "WebApplication",
+    "operatingSystem": "Web",
+    "description": "Marketplace e guia de lojas pet com filtragem por localização, avaliações e painel do lojista.",
+    "url": "",
+    "offers": {"@type": "Offer", "price": 0, "priceCurrency": "BRL"}
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="PetCareApp">
+        <img class="brand-logo" src="fotos%20projeto/petcare%20logo.jpg" alt="Logo PetCareApp" />
+        <span class="brand-text">PetCareApp</span>
+      </a>
+      <nav class="nav" aria-label="primária">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">☰</button>
+        <ul id="navMenu" class="nav-list">
+          <li><a href="#recursos">Recursos</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#screenshots">Screenshots</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a class="btn btn-sm" href="#cta">Começar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="section hero">
+      <div class="container grid-2">
+        <div>
+          <h1>Marketplace e guia de lojas pet</h1>
+          <p class="lead">O PetCareApp reúne mapa com filtragem por localização, avaliações de lojas e produtos, favoritos e um painel completo para lojistas gerenciarem seu catálogo.</p>
+          <div class="actions" id="cta">
+            <a class="btn" target="_blank" rel="noopener" href="https://github.com/lfocarvalho/projeto-de-sistemas.git">Ver repositório</a>
+            <a class="btn btn-ghost" href="#como-rodar">Executar localmente</a>
+          </div>
+          <ul class="kpis">
+            <li><strong>Localização</strong> Filtragem por latitude/longitude</li>
+            <li><strong>Avaliações</strong> Média por loja e produto</li>
+            <li><strong>Painel</strong> Gestão para lojistas</li>
+          </ul>
+        </div>
+        <div>
+          <div class="device-frame">
+            <div class="device-bar"></div>
+            <div class="device-screen">
+              <img class="device-screen-img logo" src="fotos%20projeto/petcare%20logo.jpg" alt="Logo do PetCareApp" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recursos -->
+    <section id="recursos" class="section">
+      <div class="container">
+        <h2>Recursos principais</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Mapa e proximidade</h3>
+            <p>Encontre lojas próximas com base em latitude/longitude e visualize no mapa para decidir mais rápido onde ir.</p>
+          </article>
+          <article class="card">
+            <h3>Produtos com avaliações</h3>
+            <p>Descubra produtos populares, leia avaliações reais e acompanhe a média de notas de forma transparente.</p>
+          </article>
+          <article class="card">
+            <h3>Favoritos</h3>
+            <p>Marque lojas e produtos preferidos para encontrá-los rapidamente e organizar suas escolhas.</p>
+          </article>
+          <article class="card">
+            <h3>Painel do lojista</h3>
+            <p>Gerencie catálogos, estoque e presença digital com uma interface simples, incluindo cadastro e manutenção de produtos.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Como funciona -->
+    <section id="como-funciona" class="section alt">
+      <div class="container grid-3">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>Instale e rode</h3>
+          <p>Clone o repositório, crie um ambiente virtual, instale dependências, execute migrações e rode o servidor Django.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>Explore lojas</h3>
+          <p>Navegue pelo mapa, aplique filtros de proximidade e veja detalhes das lojas, avaliações e serviços oferecidos.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Avalie e gerencie</h3>
+          <p>Deixe avaliações, favorite itens e, como lojista, mantenha seu catálogo sempre atualizado pelo painel.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Screenshots (placeholders) -->
+    <section id="screenshots" class="section">
+      <div class="container">
+        <h2>Uma espiada nas telas</h2>
+        <div class="screens">
+          <figure class="shot">
+            <img src="fotos%20projeto/tela_lojas.png" alt="Tela de lista de lojas" />
+            <figcaption>Lista de lojas</figcaption>
+          </figure>
+          <figure class="shot">
+            <img id="mapCaptureImg" src="fotos%20projeto/Captura%20de%20tela%20de%202025-11-22%2019-58-46.png" alt="Tela de localização e mapa" />
+            <figcaption>Localizações e mapa</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="fotos%20projeto/avaliacao_loja.png" alt="Avaliação de loja" />
+            <figcaption>Avaliação de loja</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="fotos%20projeto/tela_login.png" alt="Tela de login" />
+            <figcaption>Login</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="fotos%20projeto/tela_perfil_cliente.png" alt="Perfil do cliente" />
+            <figcaption>Perfil do cliente</figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="fotos%20projeto/tela_agendamentos.png" alt="Agendamentos" />
+            <figcaption>Agendamentos</figcaption>
+          </figure>
+        </div>
+        <p class="note">As capturas acima são do próprio PetCareApp em execução local.</p>
+      </div>
+    </section>
+
+    <!-- Como rodar -->
+    <section id="como-rodar" class="section alt">
+      <div class="container">
+        <h2>Como rodar o projeto completo</h2>
+        <ol class="how-to">
+          <li>Crie e ative um ambiente virtual de Python.</li>
+          <li>Instale as dependências do projeto.</li>
+          <li>Execute as migrações do Django e crie um superusuário.</li>
+          <li>Inicie o servidor de desenvolvimento e acesse no navegador (ex.: http://localhost:8000).</li>
+        </ol>
+        <p class="note">O PetCareApp é um projeto Django modular (lojas, produtos e painel do lojista) com recursos de localização e avaliações.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container">
+        <h2>Perguntas frequentes</h2>
+        <details>
+          <summary>Quais são os principais módulos do projeto?</summary>
+          <p>O PetCareApp é organizado em apps:</p>
+          <ul>
+            <li><strong>Lojas (loja)</strong>: cadastro, listagem e detalhes; mapa; filtragem por localização; favoritos.</li>
+            <li><strong>Produtos (produto)</strong>: catálogo com avaliações, média de notas e favoritos.</li>
+            <li><strong>Painel do lojista (painel_lojista)</strong>: gestão de produtos e presença da loja.</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Quais os requisitos e como instalar?</summary>
+          <p>Recomendado Python 3.10+ e um ambiente virtual. Depois de clonar o repositório, crie o ambiente, instale dependências, aplique migrações e rode o servidor de desenvolvimento. Verifique o README do projeto para passos e dependências específicas.</p>
+        </details>
+        <details>
+          <summary>Qual banco de dados é usado?</summary>
+          <p>Por padrão o projeto utiliza SQLite (arquivo <code>db.sqlite3</code>) para facilitar o desenvolvimento local. Em produção, recomenda-se usar PostgreSQL ou outro SGBD gerenciado, ajustando as configurações no <code>settings.py</code>.</p>
+        </details>
+        <details>
+          <summary>Como funciona o mapa e a geolocalização?</summary>
+          <p>As lojas possuem latitude/longitude e podem ser filtradas por proximidade. O mapa é renderizado no front-end; verifique o template de mapa para configurar o provedor (por exemplo, Google Maps, Leaflet ou similar) e chaves de API, se necessário.</p>
+        </details>
+        <details>
+          <summary>Como funciona a autenticação?</summary>
+          <p>O projeto inclui telas de login e cadastro. Usuários autenticados podem favoritar lojas/produtos e registrar avaliações. O painel do lojista requer autenticação com permissões adequadas.</p>
+        </details>
+        <details>
+          <summary>Como funcionam as avaliações e favoritos?</summary>
+          <p>Usuários podem avaliar lojas e produtos; as médias são calculadas e exibidas nas telas. É possível favoritar itens para acessá-los facilmente mais tarde.</p>
+        </details>
+        <details>
+          <summary>Como coloco dados de exemplo?</summary>
+          <p>Você pode cadastrar diretamente pelo admin do Django ou criar comandos de carga/fixtures. Para testes rápidos, crie algumas lojas com coordenadas válidas para visualizar o mapa e a filtragem por proximidade.</p>
+        </details>
+        <details>
+          <summary>Posso usar o projeto em produção?</summary>
+          <p>Sim. Configure variáveis de ambiente (SECRET_KEY, DEBUG=False), banco de dados gerenciado, coleta de estáticos (<code>collectstatic</code>), armazenamento de mídia e um servidor WSGI (ex.: gunicorn) atrás de um servidor web (ex.: Nginx). Considere também HTTPS e monitoramento.</p>
+        </details>
+        <details>
+          <summary>Quais são os erros comuns e como resolver?</summary>
+          <ul>
+            <li><strong>Estáticos não carregam</strong>: certifique-se de rodar <code>collectstatic</code> e configurar o servidor para servir arquivos estáticos.</li>
+            <li><strong>Migrações faltando</strong>: execute <code>migrate</code> e verifique conflitos/migrações pendentes.</li>
+            <li><strong>Imagens não aparecem</strong>: confira as configurações de MEDIA_ROOT/MEDIA_URL e permissões de escrita.</li>
+            <li><strong>Mapa vazio</strong>: confirme chaves de API e coordenadas válidas para as lojas.</li>
+          </ul>
+        </details>
+        <details>
+          <summary>Licença e contribuições</summary>
+          <p>Verifique o arquivo de licença no repositório. Contribuições são bem-vindas via Pull Requests; por favor, abra uma issue para discutir mudanças maiores antes de enviar.</p>
+        </details>
+        <details>
+          <summary>Contato e suporte</summary>
+          <p>Para relatar bugs, sugerir melhorias ou tirar dúvidas, abra uma issue no GitHub do projeto: <a target="_blank" rel="noopener" href="https://github.com/lfocarvalho/projeto-de-sistemas/issues">Issues</a>.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> PetCareApp – Projeto open source. Feito com ❤ em Django.</p>
+      <div class="footer-actions">
+        <button id="themeToggle" class="btn btn-sm" aria-pressed="false">Alternar tema</button>
+  <a class="btn btn-sm btn-ghost" target="_blank" rel="noopener" href="https://github.com/lfocarvalho/projeto-de-sistemas.git">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Coloque aqui suas imagens de screenshots (PNG/JPG/SVG). Atualize a seção "Screenshots" do index.html para apontar para estes arquivos.
